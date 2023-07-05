@@ -1,1 +1,20 @@
-# routerparancsok
+enable
+conf t
+hostname 
+interface gig {0/0}  - int g {0/1}
+ip address {ip} {mask}
+exit 
+no shutdown 
+line console (0)
+password {asd}
+login
+no login
+line vty 0 15 (mind a 16 távoli hozzaferesi vonal)
+telnet  - távoli config 
+enable password  - tavoli elereshez enable pw
+show running-config
+enable secret  - titkositott jelszó
+service password-encryption 
+banner motd 
+banner login
+ipv6 unicast-routing
